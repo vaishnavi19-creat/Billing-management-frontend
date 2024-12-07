@@ -1,0 +1,362 @@
+.shop-list-container {
+    margin-left: 240px; /* Reduced left margin */
+    margin-top: 20px; /* Reduced top margin */
+    padding: 50px; 
+    background-color: #f8f9fa;
+}
+
+/* Title styling */
+.shop-list-container h2 {
+    margin-bottom: 15px; /* Reduced bottom margin */
+    font-size: 1.5rem; /* Reduced font size */
+    color: #343a40;
+    text-align: center;
+}
+
+/* Filter and sort section styles */
+.filter-sort-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 6px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Reduced font size */
+}
+
+.sort-dropdown {
+    padding: 6px; /* Reduced padding */
+    margin-right: 5px; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Reduced font size */
+}
+
+/* Table styles */
+.shop-table {
+    width: 103%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(78, 67, 67, 0.1); /* Reduced shadow */
+    margin-bottom: 300px; /* Reduced bottom margin */
+}
+
+.shop-table th {
+    background-color: #2a3036bc;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.shop-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.shop-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.shop-table tr:hover {
+    background-color: #e9e9e9;
+}
+
+/* Action buttons */
+.action-button {
+    padding: 8px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: white;
+}
+
+.view {
+    background-color: #007bff;
+}
+
+.update {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.delete {
+    background-color: #dc3545;
+}
+
+.action-button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .shop-list-container {
+        margin-left: 0;
+    }
+
+    .search-input,
+    .sort-dropdown {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+    }
+
+    .shop-table th,
+    .shop-table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .action-button {
+        padding: 6px 8px;
+        font-size: 0.75rem;
+    }
+}
+
+/* Card view styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shop-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0px 4px 8px rgba(78, 67, 67, 0.1);
+}
+
+.shop-card h3 {
+    margin: 0 0 10px;
+}
+
+.shop-card p {
+    margin: 5px 0;
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #2b2c2d;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #2b2c2d;
+    font-weight: bold;
+}
+
+/* Dropdown menu styles */
+.view-mode-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 100;
+}
+
+.menu-icon:hover + .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-menu button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .shop-list-container {
+    margin-left: 250px; 
+    margin-top: 60px; 
+    padding: 20px; 
+    background-color: #f8f9fa; 
+}
+
+.shop-list-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #343a40; 
+    text-align: center;
+}
+
+.shop-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(78, 67, 67, 0.1); 
+    margin-bottom: 440px; }
+
+.shop-table th {
+    background-color: #2a3036bc;
+    color: white; 
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.shop-table td {
+    padding: 12px;
+    border: 1px solid #ddd; 
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.shop-table tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+.shop-table tr:hover {
+    background-color: #e9e9e9;
+}
+
+.action-button {
+    padding: 8px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: white;
+}
+
+.view {
+    background-color: #007bff; 
+}
+
+.update {
+    background-color: #ffc107; 
+    color: #333; 
+}
+
+.delete {
+    background-color: #dc3545; 
+}
+
+.action-button:hover {
+    opacity: 0.9; 
+}
+
+@media (max-width: 768px) {
+    .shop-list-container {
+        margin-left: 0; 
+        margin-top: 60px; 
+    }
+
+    .shop-table th,
+    .shop-table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .action-button {
+        padding: 6px 8px;
+        font-size: 0.75rem;
+    }
+} */
